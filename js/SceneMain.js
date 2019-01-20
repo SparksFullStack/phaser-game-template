@@ -11,16 +11,11 @@ class SceneMain extends Phaser.Scene {
         // defines all objects for the scene
         this.mainChar = this.add.sprite(game.config.width / 2, game.config.height / 2, "mainChar");
 
+        var frameNames = this.anims.generateFrameNumbers('mainChar'); // auto generates the frames from the sprite sheet
+
         this.anims.create({
             key: 'walk',
-            frames: [
-                { key: 'mainChar',frame:0 },
-                { key: 'mainChar',frame:1 },
-                { key: 'mainChar',frame:2 },
-                { key: 'mainChar',frame:3 },
-                { key: 'mainChar',frame:4 },
-                { key: 'mainChar',frame:5 },
-            ],
+            frames: frameNames,
             frameRate: 8,
             repeat: -1
         });
