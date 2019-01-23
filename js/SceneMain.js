@@ -7,7 +7,7 @@ class SceneMain extends Phaser.Scene {
         // preload all assets
     }
     create() {
-        // defines all objects for the scene
+        // defines all objects for the scene        
     }
     update() {
         // constantly runnning loop
